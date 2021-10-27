@@ -1,0 +1,135 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+          body {
+            animation: blink 0.5s;
+            animation-iteration-count: infinite;
+          }
+         .btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            text-decoration: none;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+          }
+          h1 {
+            font-family: Times, serif;
+            color: blue;
+            animation: blink 0.2s;
+            animation-iteration-count: infinite;
+          }
+
+          h2 {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            color:black;
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+          #main {
+            text-align: center;
+            background-image: url("images/absolute_trash.jpg");
+          }
+
+          #second {
+            border-radius: 50px;
+            box-shadow: 2px 10px 3px purple;
+          }
+          div {
+            border-top: 1px solid red;
+            border-right: 2px dotted black;
+            border-bottom: 1px dashed green;
+            border-left: 2px dotted black;
+            padding: 5px;
+            margin: 20px;
+          }
+
+          @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                filter: invert(100%);
+            }
+            100% {
+                opacity: 1;
+                color: red;
+            }
+          }
+          #i{
+              animation: blink 1s;
+              animation-iteration-count: infinite;
+              height: 150;
+          }
+
+
+          #planet {
+            height: 80px;
+            mix-blend-mode: multiply;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+            -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+            -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+            animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+          }
+
+          @-webkit-keyframes myOrbit {
+            from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+            to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+          }
+
+          @-moz-keyframes myOrbit {
+              from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+              to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+          }
+
+          @-o-keyframes myOrbit {
+              from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+              to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+          }
+
+          @keyframes myOrbit {
+              from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+              to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+          }
+
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%;
+            }
+
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+
+          @keyframes pulse {
+            0%, 100% {
+              background-color: yellow;
+            }
+            50% {
+              background-color: red;
+            }
+          }
+
+          .audio {
+
+          }
